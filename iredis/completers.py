@@ -136,5 +136,4 @@ def compile_grammar_bg(session):
         time.sleep(1)
         config.compiling = COMPILING_DONE
 
-    compiling_thread = threading.Thread(target=compile_and_patch, args=(session,))
-    compiling_thread.start()
+    compile_and_patch(session)
